@@ -13,7 +13,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://checkout-page-aaditya.netlify.app/">
+    <a href="https://checkout-page-aadtiya.netlify.app/">
       Solution
     </a>
     <span> | </span>
