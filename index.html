@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Checkout Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Checkout</h1>
+        </header>
+        <main>
+            <div class="flex">
+
+            <section class="information">
+
+            <h4>Contact information</h4>
+
+           
+            <form action="/action_page.php" onsubmit="return validate()">
+                
+                <label for="email">E-mail</label><br>
+                <div class="input-box">
+                    <img src="./mail_white_24dp.svg" alt="">
+                    <input type="email" id="email" name="email" placeholder="Enter your email..."><br>
+                </div>
+               
+            </form>
+
+            <form action="/action_page.php" onsubmit="return validate()">
+                <label for="phone">Phone</label><br>
+                <div class="input-box">
+                    <img src="./phone_white_24dp.svg" alt="">
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone..."><br>
+                </div>
+
+            </form>
+
+            <h4>Shipping address</h4>
+
+            <form action="/action_page.php" onsubmit="return validate()"> 
+                <label for="fullnm">Full name</label><br>
+                <div class="input-box">
+                    <img src="./account_circle_black_24dp.svg" alt="">
+                <input type="text" id="fullnm" name="fullnm" value="Rodney Cotton" placeholder="Enter your Full name.."><br>
+                </div>
+
+            </form>
+
+            <form action="/action_page.php" onsubmit="return validate()">
+                <label for="addr">Address</label><br>
+                <div class="input-box">
+                    <img src="./home_black_24dp.svg" alt="">
+                <input type="text" id="addr" name="addr" placeholder="Your address.."><br>
+                </div>
+
+            </form>
+
+            <form action="/action_page.php" onsubmit="return validate()">
+                <label for="city">City</label><br>
+                <div class="input-box">
+                    <img src="./location_city_black_24dp.svg" alt="">
+                <input type="text" id="city" name="city" placeholder="Your city.."><br>
+                </div>
+            </form>
+
+            <div class="count-post">
+
+                <form action="/action_page.php" onsubmit="return validate()">
+                    <label for="countr" >Country</label><br>
+                    <div class="input-box countr-box">
+                    <img class="countr-img" src="./public_black_24dp.svg" alt="">
+                    <select id="countr" name="countr" >
+                        <option value="" disabled selected>Your Country..</option>
+                        <option value="India">India</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Sri-Lanka">Sri Lanka</option>
+                    </select>
+                    <div class="dropd"></div>
+                    </div>
+                </form>
+
+                <form action="/action_page.php" onsubmit="return validate()">
+                    <label for="postal">Postal Code</label><br>
+                    <div class="input-box post-box">
+                        <img src="./markunread_mailbox_black_24dp.svg" alt="">
+                    <input type="number" id="postal" name="postal" placeholder="Your postal code.."><br>
+                    </div>
+                </form>
+
+            </div>
+
+            <form action="./action_page.php" >
+                <input type="checkbox" id="save-info" name="save-info" value="save">
+                <label class="check" for="save-info">Save this information for next time</label>
+            </form>
+
+            <div class="sub-flex">
+                <div></div>
+                <input class="submit" type="submit" value="Submit" onclick="return validate()">
+            </div>
+          </section>  
+
+          <section class="price">
+              <div class="items">
+                <div class="invis">148.98</div>
+
+
+                <div class="item">
+                    <img class="item-pic" src="./photo1.png" alt="">
+                    <div class="item-desc">
+                        <h2>Vintage Backbag</h2>
+                        <h3>$<em class="disc-price">54.99</em><span> $94.99</span></h3>
+                        <div class="quantity">
+                            <button class="minus">-</button>
+                            <h6 class="quants">1</h6>
+                            <button class="plus">+</button>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="item">
+                    <img class="item-pic" src="./photo2.png" alt="">
+                    <div class="item-desc">
+                        <h2>Levi Shoes</h2>
+                        <h3>$<em class="disc-price">74.99</em><span> $124.99</span></h3>
+                        <div class="quantity">
+                            <button class="minus">-</button>
+                            <h6 class="quants">1</h6>
+                            <button class="plus">+</button>
+                        </div>
+                    </div>    
+                </div>
+              </div>
+            <div class="bill-check">
+              <hr>
+              <div class="bill-flex">
+                <h4>Shipping</h4>
+                <h4>$19</h4>
+              </div>
+
+              <hr>
+              <div class="bill-flex">
+                <h4>Total</h4>
+                <h4 class="total">$148.98</h4>
+              </div>
+            </div> 
+          </section>
+        </div>
+        </main>
+    </div>
+    <footer>
+        <div class="created-by">
+            <p class="footer-para">created by <strong>Aaditya</strong> - devChallenges.io</p>
+        </div>
+    </footer>
+</body>
+</html>
